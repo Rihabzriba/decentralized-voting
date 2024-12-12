@@ -1,0 +1,88 @@
+/* Container principal des candidats */
+.candidates-container {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de se répartir sur plusieurs lignes */
+    justify-content: space-evenly; /* Espacement égal entre les éléments */
+    gap: 20px; /* Espacement entre les cartes */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Carte d'un candidat */
+.candidate-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px; /* Largeur fixe de la carte */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    
+   
+}
+.candidate-card {
+    position: relative; /* Position relative pour éviter de sortir du flux naturel */
+    z-index: 1; /* Z-index inférieur à celui de la barre de navigation */
+}
+
+
+/* Effet de survol sur la carte */
+.candidate-card:hover {
+    transform: translateY(-10px); /* Légère élévation */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Titre du candidat */
+.candidate-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Nombre de votes */
+.vote-count {
+    font-size: 1.2em;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Bouton de vote */
+.candidate-card button {
+    background-color: #FF8C00;  /* Couleur orange pour attirer l'attention */
+    color: white;
+    font-size: 1em;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: auto; /* Pousser le bouton en bas */
+}
+
+/* Effet de survol du bouton */
+.candidate-card button:hover {
+    background-color: #FF6F00;
+}
+
+/* Désactivation du bouton */
+.candidate-card button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Texte indiquant qu'il n'y a pas de candidats */
+.candidates-container p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 30px;
+}
+

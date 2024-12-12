@@ -1,0 +1,102 @@
+/* Composant général de la page d'accueil */
+.home-container {
+    text-align: center;
+    padding: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Section d'en-tête de la page */
+.home-header {
+    margin-bottom: 40px;
+}
+
+/* Titre principal */
+.home-header h1 {
+    font-size: 3em;
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Image d'en-tête */
+.home-image {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 12px;
+    margin-top: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Section des descriptions */
+.home-description {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Disposition en carte responsive */
+    gap: 30px;
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style pour chaque "carte" de description */
+.home-description .card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Masquer les parties qui débordent */
+    cursor: pointer;
+}
+
+/* Effet de survol sur chaque carte */
+.home-description .card:hover {
+    transform: translateY(-10px); /* Légère élévation */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Titres des cartes */
+.home-description .card h2, .home-description .card h3 {
+    color: #E195AB;  /* Couleur orange */
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+/* Paragraphe de la carte */
+.home-description .card p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Animation de fade-in pour les cartes */
+.home-description .card {
+    opacity: 0;
+    animation: fadeIn 0.6s forwards;
+}
+
+.home-description .card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.home-description .card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.home-description .card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* Animation pour l'apparition des cartes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+

@@ -1,0 +1,95 @@
+/* Style de la barre de navigation */
+nav {
+  background-color: #37AFE1; /* Bleu pour le fond */
+  padding: 15px 0; /* Espacement vertical plus grand */
+  width: 100%; /* Prendre toute la largeur de la page */
+  position: fixed; 
+  top: 0;
+  left: 0;
+  z-index: 1000; /* z-index: 1000; S'assurer que la barre de navigation est au-dessus des autres éléments */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet de profondeur */
+}
+
+/* Liste de navigation */
+nav ul {
+  display: flex;
+  justify-content: center; /* Centrer les éléments horizontalement */
+  list-style-type: none; /* Enlever les puces */
+  padding: 0;
+  margin: 0;
+}
+
+/* Liens de navigation */
+nav ul li {
+  margin: 0 30px; /* Espacement entre les éléments de la liste */
+}
+
+/* Style des liens */
+nav ul li a {
+  color: white; /* Couleur du texte */
+  text-decoration: none; /* Enlever le soulignement des liens */
+  font-size: 18px; /* Taille du texte */
+  font-weight: 600; /* Poids du texte pour plus de visibilité */
+  text-transform: uppercase; /* Texte en majuscules */
+  letter-spacing: 1px; /* Espacement des lettres pour un effet moderne */
+}
+
+/* Effet de survol sur les liens */
+nav ul li a:hover {
+  color: #ffcc00; /* Couleur jaune-orange au survol */
+}
+
+/* Style pour le logo dans la navbar */
+/* Style de la barre de navigation */
+nav {
+  background-color: #37AFE1; /* Bleu pour le fond */
+  padding: 15px 0; /* Espacement vertical plus grand */
+  width: 100%; /* Prendre toute la largeur de la page */
+  position: fixed; 
+  top: 0;
+  left: 0;
+  z-index: 1000; /* z-index: 1000; S'assurer que la barre de navigation est au-dessus des autres éléments */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet de profondeur */
+}
+
+/* Liste de navigation */
+nav ul {
+  display: flex;
+  justify-content: center; /* Centrer les éléments horizontalement */
+  list-style-type: none; /* Enlever les puces */
+  padding: 0;
+  margin: 0;
+}
+
+/* Liens de navigation */
+nav ul li {
+  margin: 0 30px; /* Espacement entre les éléments de la liste */
+}
+
+/* Style des liens */
+nav ul li a {
+  color: white; /* Couleur du texte */
+  text-decoration: none; /* Enlever le soulignement des liens */
+  font-size: 18px; /* Taille du texte */
+  font-weight: 600; /* Poids du texte pour plus de visibilité */
+  text-transform: uppercase; /* Texte en majuscules */
+  letter-spacing: 1px; /* Espacement des lettres pour un effet moderne */
+}
+
+
+nav ul li a:hover {
+  color: #ffcc00; 
+}
+
+
+nav img {
+  height: 50px;  
+  width: auto;  
+  display: block;  
+  margin: 0; 
+  padding: 0; 
+  background-color: transparent; 
+  margin-left: 20px; 
+}
+
+  
